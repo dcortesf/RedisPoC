@@ -15,7 +15,7 @@
         <h1>PoC REDIS</h1>
         <p>Esta aplicación es un ejemplo del uso de Redis para la externalización de sesión. No se utiliza JSESSIONID cookie. Se puede configurar el modo de identificación de la cookie.</p>
 
-        <h1>Haz la prueba!</h1>
+        <h1>Haz la prueba!!!</h1>
 
         <form class="form-inline" role="form" action="./session" method="post">
             <label for="attributeValue">Nombre Atributo</label>
