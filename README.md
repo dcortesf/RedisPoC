@@ -1,4 +1,4 @@
-# RedisPoC
+# RedisPoC 
 
 Este es un ejemplo que muestra como externalizar la sesión de usuario a Redis, un sistema de caché
 distribuida.
