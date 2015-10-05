@@ -15,13 +15,12 @@ public class RedisConfiguration {
 	Environment env;
 	
 	@Bean
-	public JedisConnectionFactory jedisConnection(@Value("${redishost}") String host){
-		
-		System.out.println(env.getProperty("redishost"));
+	public JedisConnectionFactory jedisConnection(){
 		
 		JedisConnectionFactory conFactory = new JedisConnectionFactory();
-		conFactory.setHostName(host);
-		conFactory.setPort(6379);
+		conFactory.setHostName(env.getProperty("redishost"));
+		//conFactory.setPort(6379);
+		conFactory.setPort(Integer.parseInt(env.getProperty("redisport")));
 		
 		
 		return conFactory;	

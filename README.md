@@ -7,4 +7,7 @@ La aplicación es un proyecto Maven que utiliza Spring y Redis. El fichero clave
 dónde tiene que grabar la sesión es el fichero session.xml dónde se configura el conector de Redis (Jedis)
 para indicarle la dirección de la caché distribuida.
 
-La aplicación contempla la parametrización de Redis mediante la lectura de variable de entorno (redishost).
+La aplicación contempla la parametrización de Redis mediante la lectura de variables de entorno:
+
+1. redishost: host que aloja Redis
+2. redisport: puerto de comunicación con Redis
