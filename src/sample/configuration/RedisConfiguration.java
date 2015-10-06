@@ -1,15 +1,16 @@
 package sample.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
-import sample.RedisHttpSessionConfig;
+
 
 @Configuration
+@EnableRedisHttpSession
 public class RedisConfiguration {
 	@Autowired
 	Environment env;
@@ -26,11 +27,6 @@ public class RedisConfiguration {
 		return conFactory;	
 	}
 	
-	@Bean
-	public RedisHttpSessionConfig getSessionConfig(){
-		
-		RedisHttpSessionConfig sessionConfig = new RedisHttpSessionConfig();
-		return sessionConfig;
-	}
+	
 
 }
