@@ -9,5 +9,5 @@ para indicarle la dirección de la caché distribuida.
 
 La aplicación contempla la parametrización de Redis mediante la lectura de variables de entorno:
 
-1. redishost: host que aloja Redis
-2. redisport: puerto de comunicación con Redis
+1. REDIS_SERVICE_HOST: host que aloja Redis
+2. REDIS_SERVICE_PORT: puerto de comunicación con Redis
