@@ -19,9 +19,9 @@ public class RedisConfiguration {
 	public JedisConnectionFactory jedisConnection(){
 		
 		JedisConnectionFactory conFactory = new JedisConnectionFactory();
-		conFactory.setHostName(env.getProperty("redishost"));
+		conFactory.setHostName(env.getProperty("REDIS_SERVICE_HOST"));
 		//conFactory.setPort(6379);
-		conFactory.setPort(Integer.parseInt(env.getProperty("redisport")));
+		conFactory.setPort(Integer.parseInt(env.getProperty("REDIS_SERVICE_PORT")));
 		
 		
 		return conFactory;	
